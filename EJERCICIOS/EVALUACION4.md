@@ -19,6 +19,16 @@ envíos de compras a minoristas. (Valor 5 puntos)
 a. Escribe una declaración usando if que imprima ¡El valor del artículo es alto!
 cuando costoArticulo es mayor que 24.00.
 
+                  public class Pedido {
+                    public static void main(String[] args) {
+                      double costoArticulo = 30.99;
+                      boolean listoEviar=false;
+
+                      if(costoArticulo>24){
+                        System.out.println("¡El valor del artículo es alto!")
+                      }
+                    }
+                  }
 b. En el código de arriba hay variable listoEnviar cuyo valor representa si el pedido
 está listo para enviarse. Escribe un enunciado if-then-else que:
 
@@ -31,6 +41,23 @@ Salida:
             ¡El valor del artículo es alto!
             Pedido no listo
 
+                  public class Pedido {
+                    public static void main(String[] args) {
+                      double costoArticulo = 30.99;
+                      boolean listoEviar=false;
+
+                      if(costoArticulo>24){
+                        System.out.println("¡El valor del artículo es alto!")
+                      }
+
+                      if(listoEnviar = true){
+                        System.out.prinln("Enviado")
+                      } else(listoEnviar = false){
+                        System.out.println("Pedido no listo.")
+                      }
+                    }
+                  }
+                  
 2. Realiza un programa en java que imprima los primeros 15 elementos de alguna de
 las siguientes series haciendo uso necesariamente de las sentencias de control:
 (Valor 5 puntos)
