@@ -9,59 +9,40 @@ clara, según sea el caso.
 
 1. ¿Cuál de las siguientes líneas arrojaría un error de compilación? (Valor 1 punto)
 
-          a. int balance = -30;
           b. double isRaining = false;
-          c. String gradeOnTest = "A";
-          d. char grade_on_test = 'F';
 
 2. ¿Cuál de los siguientes valores es un char válido? (Valor 1 punto)
 
-          a. "a"
-          b. 'ab'
-          c. 'F'
           d. 7
 
 3. ¿A qué tipo de datos solo se le puede asignar uno de dos valores? (Valor 1 punto)
 
-          a. char
-          b. double
           c. boolean
-          d. int
+
 
 4. ¿Qué línea declara la variable bestProgrammingLanguage y la inicializa para que
 sea "Java"? (Valor 1 punto)
 
-          a. bestProgrammingLanguage = String "Java";
-          b. string bestProgrammingLanguage = "Java";
           c. String bestProgrammingLanguage = "Java";
-          d. "Java" = String bestProgrammingLanguage;
+
 
 
 5. ¿Qué opción es un nombre de variable válido y sigue las convenciones de
 nomenclatura de Java? (Valor 1 punto)
 
-          a. 2ndPhoneNumber
           b. TimeUntilLaunch
-          c. second_phone_number
-          d. timeUntilLaunch
 
-6. ¿Qué línea de código declara una variable llamada numConejos para almacenar
+7. ¿Qué línea de código declara una variable llamada numConejos para almacenar
 un número entero? (Valor 1 punto)
 
-          a. numConejos = int;
-          b. numConejos int;
-          c. number numConejos;
           d. int numConejos;
 
-7. ¿Qué valor NO se puede asignar a una variable con el tipo de datos double? (Valor
+8. ¿Qué valor NO se puede asignar a una variable con el tipo de datos double? (Valor
 1 punto)
 
-          a. "60"
-          b. 6.7
-          c. 5
           d. -.2
 
-8. Supón que tienes un programa llamado Creador.java y dentro de este hemos
+9. Supón que tienes un programa llamado Creador.java y dentro de este hemos
 definido algunas variables relacionadas a James Gosling, el creador de Java como
 se muestra a continuación: (Valor 2 puntos)
 
@@ -89,6 +70,22 @@ c. Escribe la salida.
       James Gosling
       1995
 
+
+                    public class Creator {
+
+                      public static void main(String[] args) {
+
+                       String nombre = "James Gosling";
+
+                       int yearCreado = 1995;
+                              System.out.println("Salida:")
+                              System.out.println(nombre)
+                              System.out.println(yearCreado)
+                      }
+
+                    }
+
+                    
 9. Supón que tienes un programa llamado ContComentarios.java y dentro de este
 tenemos el siguiente código definido: (Valor 2 puntos)
 
@@ -115,6 +112,14 @@ c. Escribe la salida.
 
       Salida:
       6
+
+                public class ContComentarios {
+                   public static void main(String[] args) {
+
+                       System.out.println("Numero de comentarios en el codigo:");
+                       System.out.println("6");
+                   }
+                 }
 
 10. Considera el código del siguiente programa escrito en Java cuyo nombre del
 archivo es CuotaMercado.java: (Valor 2 puntos)
@@ -149,25 +154,59 @@ a. Crea una variable llamada intsPuedeAlmacenarDecimales. Ponlo en verdadero
 (True) si el tipo int puede contener un número decimal. Ponlo en falso (false) si el
 tipo int no puede hacer esto.
 
+  public class Booleans {
+                public static void main(String[] args) {
+                boolean intsPuedeAlmacenarDecimales = (false)
+                }
+              }
+
 b. Imprime la variable intsPuedeAlmacenarDecimales.
+           
+               public class Booleans {
+                public static void main(String[] args) {
+                          boolean intsPuedeAlmacenarDecimales = (false)
+                          System.out.prinln("int puede imprimir decimales?");
+                          System.out.prinln(intsPuedeAlmacenarDecimales)
+       
+                }
+              }
 
 c. Escribe la salida.
 
                 Salida:
                 70.97
 
+               public class Booleans {
+                public static void main(String[] args) {
+                          double intsPuedeAlmacenarDecimales;
+                          intsPuedeAlmacenarDecimales=(70.97);
+                          System.out.println(intsPuedeAlmacenarDecimales)
+                }
+              }
+
+              
 12. Considera el código del siguiente programa escrito en Java cuyo nombre del
 archivo es Char.java: (Valor 2 puntos)
 
               public class Char {
                 public static void main(String[] args) {
+                        
                 }
               }
     
 a. Escribe como comentario de una sola línea tu nombre
+ public class Char {
+          //Alonso
+          .....
 
 b. Crea una variable llamada primerLetra de tipo char y almacena ahí la primer
 letra de tu nombre.
+
+            public class Char {
+                public static void main(String[] args) {
+                        char primerLetra = ("A")
+                }
+              }
 
 c. Imprime en la terminal el valor de la variable primerLetra.
 
@@ -176,6 +215,13 @@ d. Escribe la salida.
 
                 Salida:
                 M
+
+              public class Char {
+                public static void main(String[] args) {
+                        char primerLetra = ("A");
+                        System.out.prinln(primerLetra)
+                }
+              }
 
 13. Considera el código del siguiente programa escrito en Java cuyo nombre del
 archivo es Poema.java: (Valor 2 puntos)
@@ -196,6 +242,15 @@ c. Escribe la salida.
                 Salida:
                 Aquí no suceden cosas de mayor trascendencia que las rosas.
 
+  public class Poema {
+     public static void main(String[] args) {
+         String verso = (“Aquí no suceden cosas de mayor trascendencia que las rosas.”);
+               System.out.println(verso)
+     }
+  }
+
+
+              
 14. Considera el código del siguiente programa escrito en Java cuyo nombre del
 archivo es MiPerfil.java: (Valor 3 puntos)
 
@@ -234,3 +289,27 @@ g. Escribe la salida.
               500000.01
               n
               true
+
+              public class MyProfile {
+                public static void main(String[] args) {
+
+                char nombre = ("Alonso");
+                int edad = (22);
+                double salarioDeseado = (500000.01);
+                Strig genero = ("m");
+                boolean buscandoTrabajo (True);
+
+                System.out.println("Nombre: ");
+                System.out.println(nombre);
+                System.out.println("Edad: ");
+                System.out.println(edad);
+                System.out.println("Salario deseado:");
+                System.out.println(salarioDeseado);
+                System.out.println("Genero ");
+                System.out.println(genero);
+                System.out.println("Abierto a chambiar");
+                System.out.println(buscandoTrabajo);
+                
+
+              }
+             }
